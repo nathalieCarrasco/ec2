@@ -1,0 +1,103 @@
+/* Estilos personalizados */
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.section {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 40px;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.button {
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+/* Al pasar el ratón, la tarjeta se elevará */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para el contenido que se mostrará al elevar la tarjeta */
+.card-content {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    transition: opacity 0.3s;
+}
+
+/* Mostramos el contenido al pasar el ratón */
+.card:hover .card-content {
+    display: block;
+}
